@@ -1,38 +1,74 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>BELAJAR NGODING</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <!-- NAVIGATION BAR -->
-         <div class="container-navbar">
-            <ul class="ul-navbar">
-                <li class="li-navbar">
-                    <a href="index.html">HOME</a>
-                </li>
-                <li class="li-navbar">
-                    <a href="about.html">ABOUT ME</a>
-                </li>
-                <li class="li-navbar">
-                    <a href="contact me.html">CONTACT ME</a>
-                </li>
-            </ul>
-         </div>
-        <!-- NAVIGATION BAR SELESAI -->
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
 
-        <!-- CONTENT 1 -->
-         <div class="container-content">
-            <img src="youtube.png" width="30%" height="20%"/>
-         </div>
-        <!-- CONTENT 1 END -->
+<header class="container-navbar">
+    <ul class="ul-navbar">
+            <li class="li-navbar">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="li-navbar">
+              <a href="profile.html">Our Profile</a>
+            </li>
+            <li class="li-navbar">
+              <a href="portofolio.html">Portofolio</a>
+            </li>
+            <li class="li-navbar">
+              <a href="message.html">Message Us</a>
+            </li>
+    </ul>
+</header>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="im2.jpeg" style="width:100%">
+  <img class="mySlides" src="img1.jpeg" style="width:100%">
+  <img class="mySlides" src="img3.jpeg" style="width:100%">
+  <script src="js/script.js"></script>
+</div>
+
+<section>
+  <h3>Our Headquarter</h3>
+  <div>
+    
+    <img src="jakarta.jpeg" alt="Avatar" class="avatar" width="200px">
+    
+    
+    
+      <img src="bandung.jpeg" alt="Avatar" class="avatar" width="200px">
          
-        <!-- FOOTER -->
-         <div class="container-footer">
-            <h1 class="container-footer">Footer 1</h1>
-            <h2>Footer 2</h2>
-            <h3>Footer 3</h3>
-         </div>
-        <!-- FOOTER END -->
-    </body>
+      
+        <img src="surabaya.jpeg" alt="Avatar" class="avatar" width="200px">
+      </div>
+
+      </section>
+
+      <h3>Message US</h3>
+
+      <form action="/action_page.php">
+        <label for="fname">Nama   :</label>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Tanggal Lahir:</label>
+        <input type="date" id="lname" name="lname"><br>
+        <label for="lname">Jenis Kelamin:</label>
+        <input type="radio" id="lname" name="lname">laki laki
+        <input type="radio" id="lname" name="lname">perempuan<br>
+        <label for="lname">Pesan:</label>
+        <textarea name="message" rows="10" cols="30"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+      </form> 
+
+<footer>
+  <p>Created By Naela</p>
+</footer>
+
+</body>
 </html>
+
