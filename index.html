@@ -3,12 +3,12 @@
 <head>
 <title>CSS Template</title>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/style.css" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-<body>
-
+<body onload = "message()">
+  
 <header class="container-navbar">
     <ul class="ul-navbar">
             <li class="li-navbar">
@@ -21,10 +21,12 @@
               <a href="portofolio.html">Portofolio</a>
             </li>
             <li class="li-navbar">
-              <a href="message.html">Message Us</a>
+              <a href="#form">Message Us</a>
             </li>
     </ul>
 </header>
+
+<div id="message"></div>
 
 <div class="w3-content w3-section" style="max-width:500px">
   <img class="mySlides" src="im2.jpeg" style="width:100%">
@@ -36,34 +38,47 @@
 <section>
   <h3>Our Headquarter</h3>
   <div>
-    
+    <!-- <a href="default.asp"><img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"></a> -->
+
     <img src="jakarta.jpeg" alt="Avatar" class="avatar" width="200px">
-    
-    
-    
+          
       <img src="bandung.jpeg" alt="Avatar" class="avatar" width="200px">
-         
-      
+               
         <img src="surabaya.jpeg" alt="Avatar" class="avatar" width="200px">
       </div>
 
       </section>
 
-      <h3>Message US</h3>
+      <h3 id="form">Message US</h3>
 
-      <form action="/action_page.php">
-        <label for="fname">Nama   :</label>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Tanggal Lahir:</label>
-        <input type="date" id="lname" name="lname"><br>
-        <label for="lname">Jenis Kelamin:</label>
-        <input type="radio" id="lname" name="lname">laki laki
-        <input type="radio" id="lname" name="lname">perempuan<br>
-        <label for="lname">Pesan:</label>
-        <textarea name="message" rows="10" cols="30"></textarea>
-        <br>
-        <input type="submit" value="Submit">
-      </form> 
+      <div class="login">
+        <form action="#" method="POST" onSubmit="validasi()">
+          <div>
+            <label>Nama Lengkap:
+            <input type="text" name="nama" id="nama" />
+          </label>
+          </div>
+          <div>
+            <label>Email:
+            <input type="email" name="email" id="email" />
+              </label>
+          </div>
+          <div>
+            <label>Jenis Kelamin:
+            <input type="radio" name="radio" id="laki-laki" />Laki-Laki
+            <input type="radio" name="radio" id="perempuan" />Perempuan
+              </label>
+          </div>
+          <div>
+            <label>Pesan:
+            <textarea cols="40" rows="5" name="alamat" id="alamat"></textarea>
+          </label>
+          </div>
+          <div>
+            <input type="submit" value="Daftar" class="tombol">
+          </div>
+        </form>
+      </div>
 
 <footer>
   <p>Created By Naela</p>

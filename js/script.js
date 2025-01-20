@@ -1,3 +1,9 @@
+
+function message(){name = window.prompt("What is your Name?");
+  if ((name == null)||(name == "")){name = "Unknown";}
+  document.cookie = name;
+  document.getElementById("message").innerHTML = "<p> Hallo nice to meet you " + name + "</p>";}
+
 var myIndex = 0;
 carousel();
 
@@ -13,3 +19,13 @@ function carousel() {
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 
+function validasi() {
+  var nama = document.getElementById("nama").value;
+  var email = document.getElementById("email").value;
+  var alamat = document.getElementById("alamat").value;
+  if (nama != "" && email!="" && alamat !="") {
+    return true;
+  }else{
+    alert('Anda harus mengisi data dengan lengkap !');
+  }
+}
